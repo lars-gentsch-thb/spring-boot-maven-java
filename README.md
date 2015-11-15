@@ -1,5 +1,9 @@
 # spring-boot-maven-java
 
+## Travis-CI
+
+[![Build Status](https://travis-ci.org/lars-gentsch-fhb/spring-boot-maven-java.svg?branch=master)](https://travis-ci.org/lars-gentsch-fhb/spring-boot-maven-java)
+
 ## Covertiy
 
 <a href="https://scan.coverity.com/projects/lars-gentsch-fhb-spring-boot-maven-java">
