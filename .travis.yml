@@ -1,1 +1,17 @@
 language: java
+
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "Gwp1O2S7I8ppc9aNUtGQ14rrjYPlrDz3ihiP46Ggb15fa/bvuS0xZF2Jv2GfHmolDv/kWeC8Jg/w7Us3cr0yVjoJ3UGddiPuTPqGzc7wyEtGmJjHTpMq9T2y3KE7FYLTc0XBco+91Gyg3ZnqzBMiqDRLnVaS+K+9JG014EzfJ7vY9bt6eQowUfhVxAdFPvcjaAFPthskvCv8hpv2xxX/K8kP5PJtZkWTZse2PU/uQ7/dzoJ+vdvEJA5PpTFkxVoTX800IAvYuNS9ihiVjXPw6Lm82EhWm8J4pTrjWJyHqmotLMUQPeY74wubZjMTiX8PeLRcneot2PVhyzCZ9k5bnHH5wi3BL1F9Sr2zZxYIIlDWZC6/HB7U2Wy868mstkqyrht3TOhYUTLO4hcCRnPcYPhxrrJcBRO5tytS8OMZhea47DdAvZWRSwL1zSGYvnAG7MmJnfULP7/0H2QnXrVOcclTFvvfCcJ2T8DziRIpmPAJpa0r73l9Pc6Hq6Mo2BJOrzOBJV1yNaU2GPGAqWanECbhuAN9Rs3EsrNpBzjmMG1x0+QYMwoGJqCQ1MUJMq+Q0fR0zWM/+tU4i+E2WSjxNbbPnpXKR8D/dS5CA/j3JmDBRKj1YYtr9nsOouj+QJRfop35xCDPgZlgBaV1CjreiQig4XGSSg5f6s9qNQ4PKII="
+
+addons:
+  coverity_scan:
+    project:
+      name: "lars-gentsch-fhb/spring-boot-maven-java"
+      description: "Build submitted via Travis CI"
+    notification_email: lars.gentsch@gmail.com
+    build_command_prepend: "mvn clean"
+    build_command:   "mvn -DskipTests=true compile"
+    branch_pattern: coverity_scan
