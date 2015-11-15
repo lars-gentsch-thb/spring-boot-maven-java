@@ -17,3 +17,7 @@
   <img alt="Coverity Scan Build Status"
        src="https://img.shields.io/coverity/scan/7032.svg"/>
 </a>
+
+## Coveralls
+
+[![Coverage Status](https://coveralls.io/repos/lars-gentsch-fhb/spring-boot-maven-java/badge.svg?branch=master&service=github)](https://coveralls.io/github/lars-gentsch-fhb/spring-boot-maven-java?branch=master)
