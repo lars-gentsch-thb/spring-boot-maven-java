@@ -1,5 +1,8 @@
 # spring-boot-maven-java
 
+## SonarCloud.io
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lars-gentsch-thb_spring-boot-maven-java&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=lars-gentsch-thb_spring-boot-maven-java)
+
 ## Travis-CI
 
 [![Build Status](https://travis-ci.org/lars-gentsch-fhb/spring-boot-maven-java.svg?branch=master)](https://travis-ci.org/lars-gentsch-fhb/spring-boot-maven-java)
